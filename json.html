@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let obj={
+            oracle:function(){
+                document.write("oracle connecting soon");
+            },
+            mysql:function(){
+                document.write("oracle connecting soon");
+            }
+
+        };
+        obj.oracle();
+        obj.mysql();
+    </script> -->
+
+    <!-- <script>
+        let obj={
+            boot: (p1)=>{
+                return `welcome to ${p1}`;
+            }
+
+        };
+        let res=obj.boot(`spring boot 4.x`);
+        document.write(res);
+    </script> -->
+    <!-- <script>
+        let employees=[{e_id:111, e_name:"emp_one", e_image:"https://reqres.in/img/faces/1-image.jpg"},
+        {e_id:222, e_name:"emp_two", e_image:"https://reqres.in/img/faces/2-image.jpg"},
+        {e_id:333, e_name:"emp_three", e_image:"https://reqres.in/img/faces/3-image.jpg"},
+        {e_id:444, e_name:"emp_four", e_image:"https://reqres.in/img/faces/4-image.jpg"},
+        {e_id:555, e_name:"emp_five", e_image:"https://reqres.in/img/faces/5-image.jpg"}        
+        ];
+
+       document.write(` <table border="1"
+                                align="center"
+                                cellspacing="10px"
+                                cellpadding="10px">
+                                <tr>
+                                    <th> e_id</th>
+                                    <th> e_name</th>
+                                    <th> e_image</th>
+                                    </tr>`
+                                    );
+        for(let employee of employees){
+            document.write(`<tr>
+                <td>${employee.e_id}</td>
+                <td>${employee.e_name}</td>
+                <td>
+                    <img src=${employee.e_image} width="50px" alt="error">
+                </td>
+                </tr>`);
+        };
+        document.write(`</table>`);
+      </script> -->
+
+
+      <!-- <script>
+        let obj1={
+            key1:"front end"
+        };
+        let obj2={
+            key2:"back end"
+        };
+        let obj3={
+            ...obj1, ...obj2
+        };
+        let {key1, key2} =obj3;
+        document.write(key1,key2);
+      </script> -->
+
+      <!-- <script>
+        let obj1={
+            key1:"front end"
+        };
+        let obj2={
+             ...obj1,
+            key2:"back end"
+        };
+        let obj3={
+             ...obj2,
+            key3:"data base"
+        };
+        let {key1,key2, key3}=obj3;
+        document.write(key1,key2, key3);
+
+      </script> -->
+
+      <!-- <script>
+        let obj1={
+            key1:"hello"
+        };
+        //freeze
+        //read(perform)
+        //we can not perform  write , update , delete
+         Object.freeze(obj1);
+
+        //read(success)
+        let {key1}=obj1;
+        console.log{key1};
+
+
+        //update
+        obj1.key1="wellcome";
+        console.log(obj1);
+
+        //write
+        obj1.key2="fullstack";
+        console.log(obj1);
+
+        //delete
+        delete.obj1.key1;
+        console.log(obj1);
+      </script> -->
+
+
+      <!-- <script>
+        //read and update
+        //seal()
+        let obj1={
+            key1:"hello"
+        };
+        Object.seal(obj1);
+
+        //read
+        console.log(obj1);
+
+
+        //update
+        obj1.key1="welcome";
+        console.log(obj1);
+
+        //write
+        obj1.key2="FSD";
+        console.log(obj1);
+
+        //delete
+        delete obj1.key1;
+        console.log(obj1);
+      </script> -->
+
+
+
+      <!-- <script>
+        function fun_one(){
+            document.write("KL university");
+        }
+         let def= fun_one;
+         console.log(def);
+         def();
+      </script> -->
+
+      <!-- <script>
+        function outerfunc(){
+            let x=100;
+            function innerfunc(){
+                console.log(x);
+            }
+            return innerfunc;
+            
+        }
+        let def=outerfunc();
+        def();
+      </script> -->
+
+      <!-- <script>
+        function demo_func(){
+            let count=0;
+            return{
+                increment: function(){
+                    count++;
+                    console.log(count);
+
+                },
+                decrement : function(){
+                    count--;
+                    console.log(count);
+
+                },
+                getCount : function(){
+                    return count;
+                }
+            };
+        }
+        let obj=demo_func();
+        obj.increment();
+        obj.decrement();
+        console.log(obj.getCount());
+        console.log(obj.count);
+
+      </script> -->
+
+
+      <!-- <script>
+        let obj={
+            key1:"KLUniversity"
+        };
+        console.log(typeof obj);
+
+        let str= JSON.stringify(obj);
+        console.log(typeof str);
+
+        // let obj2=JSON.parse(str);
+      </script> -->
+
+
+      <!-- <script>
+         let obj={
+            key1:"KLUniversity"
+        };
+        console.log{ obj.hasOwnProperty("key1")};
+        console.log{ obj.hasOwnProperty("key1")};
+      </script> -->
+
+
+      <!-- <script>
+         let obj={
+            key1:"KLUniversity"
+        };
+        //obj to array
+        let arr=Object.entries(obj);
+        console.log(arr);
+
+        //converting array to object
+        let obj1=Object.fromEntries(arr);
+        console.log(obj1);
+
+      </script> -->
+
+      <script>
+        let obj={
+            key1:"kluniversity",
+            key2: ()=>{
+                console.log(this.key1);
+            }
+        };
+        obj.key2();
+      </script>
+
+
+
+</body>
+</html>

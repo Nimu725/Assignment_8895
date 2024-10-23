@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //store data to session storage
+        localStorage.setItem("login_details1", JSON.stringify({"uname":"admin1", "upwd":"Admin@123"}));
+        //read data from localstorage
+        console.log(JSON.parse(localStorage.getItem("login_details")));
+
+        // // //delete the data 
+        //localStorage.removeItem("login_details");
+        
+        
+        
+        // //store data to session storage
+        // sessionStorage.setItem("login_details", JSON.stringify({"uname":"admin", "upwd":"Admin@123"}));
+        // //read data from localstorage
+        // console.log(JSON.parse(sessionStorage.getItem("login_details")));
+
+        // // //delete the data 
+        //sessionStorage.removeItem("login_details");
+    </script>
+</body>
+</html>

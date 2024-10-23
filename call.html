@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        let obj={ 
+            key1:100 
+        }; 
+        function demo_funct(param1,param2,param3) 
+        { 
+            document.write(this.key1+param1+param2+param3) 
+        } 
+             
+            //demo_funct.call(obj,200,300,400); 
+            let new_func=demo_funct.bind(obj);
+            new_func(200,300,400);
+            
+    </script>
+</body>
+</html>
